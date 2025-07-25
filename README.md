@@ -24,7 +24,7 @@ app/
 ├── src/
 │ ├── main/
 │ │ ├── java/
-│ │ │ └── pt/pedrorocha/android/clickcounter/
+│ │ │ └── pt/pedrorocha/android/android-profile-app/
 │ │ │ └── HomeActivity.java
 │ │ │ └── ProfileActivity.java
 │ │ ├── res/
