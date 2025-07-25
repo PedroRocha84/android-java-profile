@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +13,8 @@ public class HomeActivity extends AppCompatActivity {
 
     public final static String NAME_KEY = "name_key";
     public final static String BIO_KEY = "bio_key";
+    public String nameText = "";
+    public String bioText = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +27,8 @@ public class HomeActivity extends AppCompatActivity {
         Button btnShow = findViewById(R.id.btnShow);
 
         btnShow.setOnClickListener(v -> {
-            String nameText = name.getText().toString();
-            String bioText = bio.getText().toString();
+            nameText = name.getText().toString();
+            bioText = bio.getText().toString();
 
             Intent intent = new Intent(this, ProfileActivity.class);
             intent.putExtra(NAME_KEY, nameText);
@@ -35,6 +36,14 @@ public class HomeActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(NAME_KEY, nameText );
+        outState.putString(BIO_KEY, bioText );
 
     }
 

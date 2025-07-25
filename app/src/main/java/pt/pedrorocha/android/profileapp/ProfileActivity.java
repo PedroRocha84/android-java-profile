@@ -4,6 +4,7 @@ import static android.widget.Toast.LENGTH_LONG;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -41,6 +42,11 @@ public class ProfileActivity extends AppCompatActivity {
             }else{
                 Toast.makeText(this, "Browser Not Found!", LENGTH_LONG).show();
             }
+        });
+
+        Button btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> {
+            finish();
         });
 
     }

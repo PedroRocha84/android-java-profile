@@ -11,4 +11,5 @@
     <string name="txtView_linkedin_view">Visit my LinkedIn Profile</string>
     <string name="please_enter_your_name">Please enter your name</string>
     <string name="write_a_short_bio_about_you">Write a short bio about you</string>
+    <string name="home">Home</string>
 </resources>
