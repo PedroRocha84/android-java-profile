@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Profile App</string>
+    <string name="txtView_profile_app">Profile App</string>
+    <string name="txtView_know_you">Let\'me know you</string>
+    <string name="txtView_about_you">About you</string>
+    <string name="txtView_name">Name</string>
+    <string name="btnProfile_show">Show</string>
+    <string name="txtView_Profile_Hello">Hello</string>
+    <string name="txtView_Bio">Your bio</string>
+    <string name="linkedin_icon">imgView_linkedin</string>
+    <string name="txtView_linkedin_view">Visit my LinkedIn Profile</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="write_a_short_bio_about_you">Write a short bio about you</string>
 </resources>

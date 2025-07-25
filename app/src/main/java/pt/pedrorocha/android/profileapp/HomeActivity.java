@@ -2,22 +2,39 @@ package pt.pedrorocha.android.profileapp;
 
 import static android.widget.Toast.LENGTH_LONG;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class HomeActivity extends AppCompatActivity {
+
+    public final static String NAME_KEY = "name_key";
+    public final static String BIO_KEY = "bio_key";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toast.makeText(this, "Home Activity onCreate Method ...",LENGTH_LONG).show();
+
+        EditText name = findViewById(R.id.txt_input_name);
+        EditText bio = findViewById(R.id.edit_text_multi_bio);
+        Button btnShow = findViewById(R.id.btnShow);
+
+        btnShow.setOnClickListener(v -> {
+            String nameText = name.getText().toString();
+            String bioText = bio.getText().toString();
+
+            Intent intent = new Intent(this, ProfileActivity.class);
+            intent.putExtra(NAME_KEY, nameText);
+            intent.putExtra(BIO_KEY, bioText);
+
+            startActivity(intent);
+        });
 
     }
 
