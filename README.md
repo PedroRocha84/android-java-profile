@@ -48,6 +48,10 @@ app/
 ## 📱 Screenshots
 
 
+<img width="170" height="355" alt="image" src="https://github.com/user-attachments/assets/a902557c-b5f8-458e-bea9-e2cc71922cdd" />
+<img width="170" height="355" alt="image" src="https://github.com/user-attachments/assets/ddb4cc29-06ba-414d-b202-5565e760d6c9" />
+
+
 ## 🔧 How to Run
 
 1. Clone the repository:
